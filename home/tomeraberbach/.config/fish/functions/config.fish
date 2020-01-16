@@ -5,7 +5,7 @@ function config -w 'git'
   if test (count $opts) -eq 2 -a $opts[1] = _
     switch $opts[2]
     case init
-      command git init $dir --bare
+      git init $dir --bare
       config config --local status.showUntrackedFiles no
       config commit --allow-empty -m "Initial commit"
       return
@@ -15,6 +15,6 @@ function config -w 'git'
     end
   end
 
-  command git --git-dir=$dir --work-tree=/ $argv
+  git --git-dir=$dir --work-tree=/ $argv
 end
 
