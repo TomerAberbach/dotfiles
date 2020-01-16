@@ -1,0 +1,9 @@
+#!/bin/bash
+
+su tomeraberbach
+. ~/.keychain/$HOSTNAME-sh
+
+export BORG_PASSCOMMAND='sudo -u tomeraberbach pass borgbase.com/passphrase'
+
+borgmatic --syslog-verbosity 2
+
