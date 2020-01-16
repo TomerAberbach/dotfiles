@@ -1,1 +1,43 @@
-../../Documents/Tomer/work/avocational/code/inactive/complete/dotfiles/borgmatic/.config/borgmatic/config.yaml
+location:    
+    source_directories:
+        - /home
+
+    repositories:
+        - rl188vr2@rl188vr2.repo.borgbase.com:repo
+
+    one_file_system: true
+
+    exclude_patterns:
+        - '*.pyc'
+        - '~/*/.cache'
+        - '**/node_modules'
+        - '~/Downloads'
+        - '~/.BitwigStudio'
+
+    exclude_caches: true
+    exclude_if_present: .nobackup
+
+storage:
+    compression: auto,zstd
+    archive_name_format: '{hostname}-{now}'
+
+retention:
+    keep_daily: 3
+    keep_weekly: 4
+    keep_monthly: 12
+    keep_yearly: 2
+    prefix: '{hostname}-'
+
+consistency:
+    checks:
+        - disabled
+    check_last: 3
+    prefix: '{hostname}-'
+
+hooks:
+    before_backup:
+        - echo "`date` - Starting backup"
+
+    after_backup:
+        - echo "`date` - Finished backup."
+
