@@ -4,14 +4,14 @@ function config -w 'git'
 
   if test (count $opts) -eq 2 -a $opts[1] = _
     switch $opts[2]
-    case init
-      git init $dir --bare
-      config config --local status.showUntrackedFiles no
-      config commit --allow-empty -m "Initial commit"
-      return
-    case list
-      config ls-tree --full-tree --name-only -r HEAD
-      return
+      case init
+        git init $dir --bare
+        config config --local status.showUntrackedFiles no
+        config commit --allow-empty -m "Initial commit"
+        return
+      case list
+        config ls-tree --full-tree --name-only -r HEAD
+        return
     end
   end
 

@@ -1,6 +1,6 @@
 function bak
-  for arg in $argv
-    if test ! -e $arg
+  for arg in (array $argv)
+    if not test -e $arg
       echo "Skipping $arg, not a file or directory"
       continue
     end

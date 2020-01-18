@@ -1,6 +1,6 @@
 function lnrep
   for arg in $argv
-    if test ! -L $arg
+    if not test -L $arg
       echo "Skipping $arg, not a symbolic link"
       continue
     end
@@ -11,7 +11,7 @@ function lnrep
       rimraf $arg
     end
 
-    mv $original $arg
+    command mv $original $arg
   end
 end
 
