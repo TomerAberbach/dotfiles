@@ -1,8 +1,23 @@
 [core]
-        autocrlf = input
+    autocrlf = input
+    editor = nvim
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
 [user]
-        email = tomeraberbach@gmail.com
-        name = Tomer Aberbach
-        signingKey = DFBA76D022524A53C21C5EAA6971AB3D54A7896D
+    email = tomeraberbach@gmail.com
+    name = Tomer Aberbach
+    signingKey = DFBA76D022524A53C21C5EAA6971AB3D54A7896D
+
 [commit]
-        gpgSign = true
+    gpgSign = true
+
+[pull]
+    rebase = true
+
+[alias]
+    co = checkout
+    st = status
+    cm = commit -m
+    br = branch
+    amend = commit --amend -m
+
