@@ -1,4 +1,5 @@
 function weather
-  curl "https://wttr.in/$argv"
+  set -l arg (string escape --style=url -- $argv)
+  curl "https://wttr.in/$arg"
 end
 

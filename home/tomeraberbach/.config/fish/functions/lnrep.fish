@@ -1,7 +1,7 @@
 function lnrep
   for arg in $argv
     if not test -L $arg
-      echo "Skipping $arg, not a symbolic link"
+      print "Skipping $arg, not a symbolic link"
       continue
     end
 

@@ -22,7 +22,7 @@ function ext
       case '*.7z'
         command 7z x $arg
       case '*'
-        echo "Skipping $arg, not a known compressed format"
+        print "Skipping $arg, not a known compressed format"
     end
   end
 end
