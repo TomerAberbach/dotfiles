@@ -1,0 +1,4 @@
+function cdb
+  cd -
+end
+
