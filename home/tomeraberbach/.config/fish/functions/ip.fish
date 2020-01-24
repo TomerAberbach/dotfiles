@@ -1,4 +1,4 @@
 function ip
-  print (curl -s api.ipify.org)
+  unit (curl -s api.ipify.org)
 end
 

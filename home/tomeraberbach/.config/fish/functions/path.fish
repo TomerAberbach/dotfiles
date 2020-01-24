@@ -1,4 +1,4 @@
 function path
-  print $PATH
+  array $PATH
 end
 

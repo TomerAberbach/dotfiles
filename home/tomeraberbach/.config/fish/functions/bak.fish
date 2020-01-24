@@ -1,17 +1,17 @@
 function bak
-  for arg in (array $argv)
+  array $argv | while read -l arg
     if not test -e $arg
-      print "Skipping $arg, not a file or directory"
+      unit "Skipping $arg, not a file or directory"
       continue
     end
 
     if string match -q '*.bak' -- $arg
-      print "Skipping $arg, a backup itself"
+      unit "Skipping $arg, a backup itself"
       continue
     end
 
     if test \( -f $arg -a -f $arg.bak \) -o \( -d $arg -a -d $arg.bak \)
-      print "Skipping $arg, already backed up"
+      unit "Skipping $arg, already backed up"
       continue
     end
 

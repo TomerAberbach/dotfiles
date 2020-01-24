@@ -3,6 +3,6 @@ function fishify
     set argv fish -c "$argv"
   end
 
-  print $argv
+  array $argv
 end
 
