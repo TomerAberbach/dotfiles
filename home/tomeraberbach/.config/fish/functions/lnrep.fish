@@ -1,5 +1,5 @@
 function lnrep
-  for arg in $argv
+  array $argv | while read -l arg  
     if not test -L $arg
       unit "Skipping $arg, not a symbolic link"
       continue
