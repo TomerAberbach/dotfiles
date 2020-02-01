@@ -1,4 +1,4 @@
 function less -w 'less'
-  command less -r
+  command less -r $argv
 end
 
