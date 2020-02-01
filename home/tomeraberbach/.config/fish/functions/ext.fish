@@ -1,5 +1,5 @@
 function ext
-  for arg in $argv
+  array $argv | while read -l arg
     switch $arg
       case '*.tar.bz2'
         command tar xjf $arg
