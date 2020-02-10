@@ -1,4 +1,4 @@
 function cat -w 'bat'
-  command bat $argv
+  command bat --style=grid,header,changes $argv
 end
 
