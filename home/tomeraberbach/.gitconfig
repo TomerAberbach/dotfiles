@@ -20,5 +20,5 @@
     cm = commit -m
     br = branch
     amend = commit --amend -m
-    uncm = git reset HEAD^
+    uncm = reset HEAD^
 
