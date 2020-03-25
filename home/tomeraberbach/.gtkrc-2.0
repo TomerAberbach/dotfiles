@@ -1,9 +1,11 @@
+gtk-enable-animations=1
+
 gtk-primary-button-warps-slider=0
 
-gtk-cursor-theme-name="Adwaita"
+gtk-cursor-theme-name="Breeze_Snow"
 
 
-gtk-font-name="Ubuntu Regular 11"
+gtk-font-name="Ubuntu, Regular 11"
 gtk-theme-name="Adwaita-dark"
 gtk-icon-theme-name="Materia-Manjaro-Dark"
 gtk-fallback-icon-theme="Adwaita"
