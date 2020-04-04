@@ -21,4 +21,6 @@
     br = branch
     amend = commit --amend -m
     uncm = reset HEAD^
+    graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(white)%<(40,trunc)%s%C(reset) %C(dim white)%<(15,trunc)%an%C(reset)' --all
+    gr = graph -n 15
 
