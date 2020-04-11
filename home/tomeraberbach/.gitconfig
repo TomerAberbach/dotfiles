@@ -35,6 +35,11 @@
     br = branch
     co = checkout
 
+    track = add -N
+    tr = add -N
+    untrack = rm -r --cached
+    untr = untrack
+
     unstage = reset HEAD --
     unadd = unstage
 
@@ -49,7 +54,7 @@
     unamend = git reset --soft HEAD@{1}
     unamn = unamend
 
-    full-graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %<(40,trunc)%s %C(dim white)%<(15,trunc)%an%C(reset)' --all
+    full-graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %<(40,trunc)%s %C(dim white)%<(15,trunc)%an%C(reset)' --branches --remotes --tags --notes HEAD
     fgr = full-graph
     graph = full-graph -n 15
     gr = graph
