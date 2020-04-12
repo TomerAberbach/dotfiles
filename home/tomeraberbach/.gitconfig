@@ -10,7 +10,23 @@
     signingKey = DFBA76D022524A53C21C5EAA6971AB3D54A7896D
 
 [color]
-    ui = auto
+    ui = true
+
+[color "status"]
+    header = normal
+    added = "#5AF78E"
+    updated = "#5AF78E"
+    changed = "#FF5C57"
+    untracked = "#FF5C57"
+
+[color "branch"]
+    current = "#57C7FF"
+    local = normal
+    remote = "#9AEDFE"
+    plain = normal
+
+[format]
+    pretty = "%C(#57C7FF)%h%Creset %C(#F3F99D)%d%Creset %s"
 
 [diff]
     compactionHeuristic = true
@@ -54,7 +70,7 @@
     unamend = git reset --soft HEAD@{1}
     unamn = unamend
 
-    full-graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %<(40,trunc)%s %C(dim white)%<(15,trunc)%an%C(reset)' --branches --remotes --tags --notes HEAD
+    full-graph = log --graph --abbrev-commit --decorate --branches --remotes --tags --notes HEAD
     fgr = full-graph
     graph = full-graph -n 15
     gr = graph
