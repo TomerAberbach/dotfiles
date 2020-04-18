@@ -57,6 +57,9 @@ function git -w 'hub'
     case 'unadd' 'unad' 'una'
       _run reset HEAD -- $after_command > /dev/null
       and _run add --intent-to-add $after_command
+    
+    case 'restore' 'restor' 'resto' 'rest' 'res'
+      _run restore $after_command
 
     case 'commit' 'commi' 'comm' 'com' 'cm'
       _run commit $after_command
@@ -80,6 +83,15 @@ function git -w 'hub'
     #                 Sad
     case 'unamend' 'unamen' 'unamn'
       _run reset --soft $after_command HEAD@{1}
+    
+    case 'fetch' 'fetc' 'fet' 'fe' 'f'
+      _run fetch $after_command
+    
+    case 'pull' 'pul' 'pl'
+      _run pull $after_command
+      
+    case 'push' 'pus' 'ps'
+      _run push $after_command
 
     case '*'
       _run $command $after_command
