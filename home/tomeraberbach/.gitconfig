@@ -16,8 +16,8 @@
     header = normal
     added = "#5AF78E"
     updated = "#5AF78E"
-    changed = "#FF5C57"
-    untracked = "#FF5C57"
+    changed = "#F3F99D"
+    untracked = "#FF5C57" 
 
 [color "branch"]
     current = "#57C7FF"
@@ -39,39 +39,4 @@
 
 [pull]
     rebase = true
-
-[alias]
-    st = status
-    pstatus = show --stat --oneline --format=format:'%s' HEAD
-    pst = pstatus
-
-    hdiff = diff HEAD
-    pdiff = diff HEAD~ HEAD
-
-    br = branch
-    co = checkout
-
-    track = add -N
-    tr = add -N
-    untrack = rm -r --cached
-    untr = untrack
-
-    unstage = reset HEAD --
-    unadd = unstage
-
-    cm = commit
-    empty-commit = commit --allow-empty --allow-empty-message
-    ecm = empty-commit
-    uncommit = reset HEAD~
-    uncm = uncommit
-
-    amend = commit --amend -C HEAD
-    amn = amend
-    unamend = git reset --soft HEAD@{1}
-    unamn = unamend
-
-    full-graph = log --graph --abbrev-commit --decorate --branches --remotes --tags --notes HEAD
-    fgr = full-graph
-    graph = full-graph -n 15
-    gr = graph
 
