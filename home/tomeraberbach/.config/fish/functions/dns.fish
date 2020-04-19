@@ -1,4 +1,4 @@
 function dns
-  command dig "$argv" ANY +noall +answer
+  command dig "$argv" +nostats +nocomments +nocmd
 end
 
