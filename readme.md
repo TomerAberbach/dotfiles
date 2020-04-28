@@ -1,4 +1,5 @@
 # Dotfiles
+
 > The files that configure my computer!
 
 ## If these are your dotfiles, then why is `/etc` in here?!?!
@@ -13,7 +14,7 @@ Yeahhhh...
 
 **Tomer Aberbach**
 
-* [Github](https://github.com/TomerAberbach)
+* [GitHub](https://github.com/TomerAberbach)
 * [npm](https://www.npmjs.com/~tomeraberbach)
 * [LinkedIn](https://www.linkedin.com/in/tomer-a)
 * [Website](https://tomeraberba.ch)
@@ -21,5 +22,6 @@ Yeahhhh...
 ## License
 
 Copyright © 2020 [Tomer Aberbach](https://github.com/TomerAberbach)
+
 Released under the [MIT license](https://github.com/TomerAberbach/dotfiles/blob/master/license).
 
