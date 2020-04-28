@@ -14,8 +14,9 @@ Yeahhhh...
 **Tomer Aberbach**
 
 * [Github](https://github.com/TomerAberbach)
-* [NPM](https://www.npmjs.com/~tomeraberbach)
-* [LinkedIn](https://www.linkedin.com/in/tomer-a)* [Website](https://tomeraberba.ch)
+* [npm](https://www.npmjs.com/~tomeraberbach)
+* [LinkedIn](https://www.linkedin.com/in/tomer-a)
+* [Website](https://tomeraberba.ch)
 
 ## License
 
