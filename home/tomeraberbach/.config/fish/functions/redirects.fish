@@ -11,7 +11,7 @@ function redirects
 
     cdb
   else
-    unit ~/Documents/Tomer/work/avocational/code/inactive/complete/tomer.link/_redirects
+    unit ~/Documents/Tomer/work/avocational/code/maintenance/tomer.link/_redirects
   end
 end
 
