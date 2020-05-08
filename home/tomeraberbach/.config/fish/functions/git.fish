@@ -91,15 +91,25 @@ function git -w 'hub'
 
     case 'revise' 'revis' 'revi' 'rev'
       set -l new (_run diff --name-only --diff-filter=A)
-      and _run add $new > /dev/null
-      and _run stash push --all > /dev/null
-      and _run commit --amend $after_command
-      and _run stash pop > /dev/null
-      and _run reset HEAD -- $new > /dev/null
-      and _run add --intent-to-add $new > /dev/null
+      and begin
+        set -l any (test (count $new) -gt 0)
+        if test $any
+            _run add $new > /dev/null
+        end
+        and _run stash push --all > /dev/null
+        and _run commit --amend $after_command
+        and _run stash pop > /dev/null
+        and if test $any
+            _run reset HEAD -- $new > /dev/null
+            and _run add --intent-to-add $new > /dev/null
+        end
+      end
       
     case 'rm'
       _run rm $after_command
+    
+    case 'stash' 'stas' 'sta'
+      _run stash $after_command
       
     case 'switch' 'switc' 'swit' 'swi' 'sw'
       _run switch $after_command
@@ -115,7 +125,7 @@ function git -w 'hub'
         set after_command '.'
       end
 
-      _run rm --cached $after_command
+      _run rm -r --cached $after_command
 
     # Collaborate
     case 'fetch' 'fetc' 'fet' 'fe' 'f'
