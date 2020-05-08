@@ -3,6 +3,7 @@
     editor = nvim
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
     mergeoptions = --no-edit
+	excludesfile = ~/.gitignore
 
 [user]
     email = tomeraberbach@gmail.com
