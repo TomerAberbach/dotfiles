@@ -1,4 +1,4 @@
 function wget -w 'wget'
-  wget -c $argv
+  command wget -c $argv
 end
 
