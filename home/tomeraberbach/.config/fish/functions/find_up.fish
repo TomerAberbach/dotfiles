@@ -1,4 +1,4 @@
-function find-up
+function find_up
   set -l current (pwd)
 
   while not test -e "$current/$argv"
