@@ -15,6 +15,7 @@ function gitdot -w 'git'
         --separate-git-dir=$HOME/dotfiles.git \
         $argv[2..-1] $dotfiles_tmp
       and rsync --recursive --verbose --exclude '.git' $dotfiles_tmp /
+      and mkinitcpio -P
 
       rm -rf $dotfiles_tmp
 
