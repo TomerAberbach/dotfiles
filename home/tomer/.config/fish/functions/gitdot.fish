@@ -1,7 +1,9 @@
 function gitdot -w 'git'
+  set -l repository_path $HOME/.dotfiles.git
+
   switch "$argv"
     case 'init'
-      git init --bare $HOME/dotfiles.git
+      git init --bare $repository_path
       and gitdot config status.showUntrackedFiles no
 
     case 'clone *'
@@ -12,7 +14,7 @@ function gitdot -w 'git'
       set -l dotfiles_tmp (mktemp -d)
 
       git clone \
-        --separate-git-dir=$HOME/dotfiles.git \
+        --separate-git-dir=$repository_path \
         $argv[2..-1] $dotfiles_tmp
       and rsync --recursive --verbose --exclude '.git' $dotfiles_tmp /
       and mkinitcpio -P
@@ -23,6 +25,6 @@ function gitdot -w 'git'
       gitdot ls-tree --full-tree --name-only -r HEAD
 
     case '*'
-      git --git-dir=$HOME/dotfiles.git --work-tree=/ $argv
+      git --git-dir=$repository_path --work-tree=/ $argv
   end
 end
