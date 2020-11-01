@@ -2,7 +2,7 @@ function gitdot -w 'git'
   switch "$argv"
     case 'init'
       git init --bare $HOME/dotfiles.git
-      and dotfiles config status.showUntrackedFiles no
+      and gitdot config status.showUntrackedFiles no
 
     case 'clone *'
       if test (id -u) -ne 0
@@ -20,7 +20,7 @@ function gitdot -w 'git'
       rm -rf $dotfiles_tmp
 
     case 'tracked'
-      dotfiles ls-tree --full-tree --name-only -r HEAD
+      gitdot ls-tree --full-tree --name-only -r HEAD
 
     case '*'
       git --git-dir=$HOME/dotfiles.git --work-tree=/ $argv
