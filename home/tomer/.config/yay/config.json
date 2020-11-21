@@ -1,0 +1,4 @@
+{
+  "makepkgbin": "makepkg",
+  "makepkgconf": "/home/tomer/.config/yay/makepkg.conf"
+}
