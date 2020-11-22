@@ -1,0 +1,15 @@
+# Font
+DMENU_FN="Ubuntu-30"
+
+# Unselected
+DMENU_NB="#222D31"
+DMENU_NF="#F9FAF9"
+
+# Selected
+DMENU_SB="#16A085"
+DMENU_SF="#F9FAF9"
+
+TERMINAL_CMD="kitty --hold"
+
+# Export options
+DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
