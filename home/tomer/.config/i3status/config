@@ -13,10 +13,12 @@ order += "tztime local"
 
 wireless wlp0s20f3 {
   format_up = " wifi %bitrate "
+  format_down = " wifi down "
 }
 
 battery 0 {
-  format = "bat %percentage"
+  format = " bat %percentage "
+  format_down = " bat down "
   last_full_capacity = true
 }
 
