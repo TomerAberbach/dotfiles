@@ -7,7 +7,18 @@ function workspace
     return
   end
 
-  set -l next "$argv[1]"
+  set -l next
+  set -l window false
+
+  getopts $argv | while read -l key value
+    switch $key
+      case n next
+        set next $value
+      case w window
+        set window true
+    end
+  end
+
   set -l number (workspace_number)
 
   if test (string length $number) -eq 1
@@ -44,6 +55,12 @@ function workspace
       set name '◲'
   end
 
-  i3-msg workspace "$number:$name" >/dev/null
+  set -l msg ''
+
+  if test $window = true
+    set msg "move container to workspace $number:$name;"
+  end
+
+  i3-msg "$msg workspace $number:$name" >/dev/null
   killall -USR1 i3status
 end
