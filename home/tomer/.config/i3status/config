@@ -1,14 +1,10 @@
 general {
-  colors = true
   interval = 5
-  color_good = "#FFFFFF"
-  color_bad = "#FFFFFF"
-  color_degraded = "#FFFFFF"
 }
 
 order += "wireless wlp0s20f3"
 order += "memory"
-order += "battery 0"
+order += "battery all"
 order += "tztime local"
 
 wireless wlp0s20f3 {
@@ -16,7 +12,7 @@ wireless wlp0s20f3 {
   format_down = " wifi down "
 }
 
-battery 0 {
+battery all {
   format = " bat %percentage "
   format_down = " bat down "
   last_full_capacity = true
@@ -27,5 +23,5 @@ memory {
 }
 
 tztime local {
-  format = " %b %d, %I:%M%P "
+  format = " %b %d, %-l:%M%P "
 }
