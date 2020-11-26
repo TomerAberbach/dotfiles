@@ -1,0 +1,157 @@
+# Borders
+default_border pixel 1
+default_floating_border normal
+hide_edge_borders none
+smart_borders on
+
+# Gaps
+gaps inner 14
+gaps outer -2
+smart_gaps on
+
+# Font
+font pango:Ubuntu 15
+
+# Startup
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id conky
+exec --no-startup-id start-pulseaudio-x11
+exec --no-startup-id pa-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id clipit
+exec --no-startup-id xautolock -time 10 -locker blurlock
+exec_always --no-startup-id fix_xcursor
+
+# Modifiers
+set $mod Mod4
+floating_modifier $mod
+
+# Focus
+focus_follows_mouse no
+for_window [urgent=latest] focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+p focus parent
+
+# Move
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Applications
+bindsym $mod+Return exec kitty
+bindsym $mod+l exec pcmanfm
+bindsym $mod+Shift+l exec pcmanfm_pkexec
+bindsym $mod+w exec google-chrome-stable
+bindsym $mod+m exec spotify
+bindsym $mod+a exec pavucontrol
+bindsym $mod+d exec --no-startup-id dmenu_recency
+
+# Floating applications
+for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Pavucontrol"] floating enable
+for_window [class="qt5ct"] floating enable sticky enable border normal
+for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
+
+# Quit
+bindsym $mod+Shift+q kill
+bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+
+# Screenshot
+bindsym Print exec --no-startup-id fish -c 'scrot ~/Documents'
+bindsym Ctrl+Print --release exec --no-startup-id fish -c 'scrot -u ~/Documents'
+bindsym Shift+Print --release exec --no-startup-id fish -c 'scrot -s ~/Documents'
+
+bindsym Alt+Print exec --no-startup-id fish -c 'scrot -o /dev/stdout | xclip -selection clipboard'
+bindsym Ctrl+Alt+Print --release exec --no-startup-id fish -c 'scrot -u -o /dev/stdout | xclip -selection clipboard'
+bindsym Ctrl+Shift+Print --release exec --no-startup-id fish -c 'scrot -s -o /dev/stdout | xclip -selection clipboard'
+
+# Brightness
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 5; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 5; notify-send 'brightness down'"
+
+# Layout
+bindsym $mod+h split h; exec notify-send 'tile horizontally'
+bindsym $mod+v split v; exec notify-send 'tile vertically'
+bindsym $mod+t layout tabbed
+
+# Window mode
+bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f floating toggle
+
+# Workspaces
+exec --no-startup-id i3-msg workspace 1:◰
+
+bindsym Mod1+Right exec --no-startup-id fish -c 'workspace -n right'
+bindsym Mod1+Up exec --no-startup-id fish -c 'workspace -n up'
+bindsym Mod1+Left exec --no-startup-id fish -c 'workspace -n left'
+bindsym Mod1+Down exec --no-startup-id fish -c 'workspace -n down'
+
+bindsym Ctrl+Mod1+Right exec --no-startup-id fish -c 'workspace -w -n right'
+bindsym Ctrl+Mod1+Up exec --no-startup-id fish -c 'workspace -w -n up'
+bindsym Ctrl+Mod1+Left exec --no-startup-id fish -c 'workspace -w -n left'
+bindsym Ctrl+Mod1+Down exec --no-startup-id fish -c 'workspace -w -n down'
+
+# i3
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+# System
+bindsym $mod+0 mode "$mode_system"
+set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (r)eboot, (Shift+s)hutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Resize
+bindsym $mod+r mode "resize"
+mode "resize" {
+  bindsym Left resize shrink width 10 px or 10 ppt
+  bindsym Down resize grow height 10 px or 10 ppt
+  bindsym Up resize shrink height 10 px or 10 ppt
+  bindsym Right resize grow width 10 px or 10 ppt
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+# Lock screen
+bindsym $mod+9 exec --no-startup-id blurlock
+
+bar {
+  i3bar_command i3bar
+  status_command fish -c 'i3status'
+  position bottom
+
+  bindsym button4 nop
+  bindsym button5 nop
+
+  workspace_buttons no
+  strip_workspace_numbers yes
+
+  colors {
+    background #222D31
+    statusline #F9FAF9
+    separator  #454947
+
+#                      border  backgr. text
+    focused_workspace  #F9FAF9 #16a085 #292F34
+    active_workspace   #595B5B #353836 #FDF6E3
+    inactive_workspace #595B5B #222D31 #EEE8D5
+    binding_mode       #16a085 #2C2C2C #F9FAF9
+    urgent_workspace   #16a085 #FDF6E3 #E5201D
+  }
+}
