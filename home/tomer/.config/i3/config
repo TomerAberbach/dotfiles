@@ -15,7 +15,7 @@ font pango:Ubuntu 15
 # Startup
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec --no-startup-id conky
+exec --no-startup-id conky --quiet
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
 exec --no-startup-id nm-applet
