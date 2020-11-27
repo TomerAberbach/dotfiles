@@ -15,7 +15,7 @@ test -f "$usermodmap"; and xrdb -merge "$usermodmap"
 if test -d /etc/X11/xinit/xinitrc.d
   for file in /etc/X11/xinit/xinitrc.d/?*.sh
     test -x "$file"; and "$file"
-  done
-done
+  end
+end
 
 exec i3
