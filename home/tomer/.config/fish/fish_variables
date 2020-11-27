@@ -1,6 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:micro
+SETUVAR --export GPG_AGENT_INFO:/run/user/1000/gnupg/S\x2egpg\x2dagent\x3a16122\x3a1
+SETUVAR --export SSH_AGENT_PID:16096
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dTpEQSgOBhrnT/agent\x2e16095
 SETUVAR __fish_initialized:3100
 SETUVAR _fisher_acomagu_2F_fish_2D_async_2D_prompt_files:/home/tomer/\x2econfig/fish/conf\x2ed/__async_prompt\x2efish
 SETUVAR _fisher_jorgebucaran_2F_getopts_2E_fish_files:/home/tomer/\x2econfig/fish/functions/getopts\x2efish
