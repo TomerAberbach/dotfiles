@@ -1,3 +1,8 @@
 /.ssh/*
 !/.ssh/config
+
 /.Xauthority
+
+/.config/fish/functions/_*.fish
+/.config/fish/functions/fish_*.fish
+/.config/fish/functions/getopts.fish
