@@ -69,9 +69,9 @@ bindsym Print exec --no-startup-id fish -c 'scrot ~/Documents'
 bindsym Ctrl+Print --release exec --no-startup-id fish -c 'scrot -u ~/Documents'
 bindsym Shift+Print --release exec --no-startup-id fish -c 'scrot -s ~/Documents'
 
-bindsym Alt+Print exec --no-startup-id fish -c 'scrot -o /dev/stdout | xclip -selection clipboard'
-bindsym Ctrl+Alt+Print --release exec --no-startup-id fish -c 'scrot -u -o /dev/stdout | xclip -selection clipboard'
-bindsym Ctrl+Shift+Print --release exec --no-startup-id fish -c 'scrot -s -o /dev/stdout | xclip -selection clipboard'
+bindsym Alt+Print exec --no-startup-id fish -c 'scrot -o /dev/stdout | clipboard'
+bindsym Ctrl+Alt+Print --release exec --no-startup-id fish -c 'scrot -u -o /dev/stdout | clipboard'
+bindsym Ctrl+Shift+Print --release exec --no-startup-id fish -c 'scrot -s -o /dev/stdout | clipboard'
 
 # Brightness
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 5; notify-send 'brightness up'"
