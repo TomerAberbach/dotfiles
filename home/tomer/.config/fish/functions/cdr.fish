@@ -1,5 +1,5 @@
 function cdr
-  set -l git_dir (find_up '.git')
+  set -l git_dir (findup '.git')
 
   if test -z $git_dir
     return 1
