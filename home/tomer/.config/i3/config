@@ -47,8 +47,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+l exec pcmanfm
 bindsym $mod+Shift+l exec pcmanfm_pkexec
 bindsym $mod+w exec google-chrome-stable
-bindsym $mod+m exec spotify --force-device-scale-factor=1.25
-bindsym $mod+c exec intellij-idea-ultimate-edition
+bindsym $mod+m exec fish -c 'music'
+bindsym $mod+c exec fish -c 'code'
 bindsym $mod+g exec gimp
 bindsym $mod+a exec pavucontrol
 bindsym $mod+d exec --no-startup-id dmenu_recency
