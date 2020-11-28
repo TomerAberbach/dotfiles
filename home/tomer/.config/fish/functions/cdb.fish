@@ -1,0 +1,3 @@
+function cdb
+  cd -
+end
