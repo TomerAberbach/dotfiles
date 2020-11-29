@@ -59,6 +59,7 @@ for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
+for_window [class="jetbrains-*" title="win0"] floating enable
 
 # Quit
 bindsym $mod+Shift+q kill
