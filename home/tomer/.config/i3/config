@@ -74,8 +74,8 @@ bindsym Ctrl+Alt+Print --release exec --no-startup-id fish -c 'scrot -u -o /dev/
 bindsym Ctrl+Shift+Print --release exec --no-startup-id fish -c 'scrot -s -o /dev/stdout | clipboard'
 
 # Brightness
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 5; notify-send 'brightness up'"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 5; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 2.5; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 2.5; notify-send 'brightness down'"
 
 # Layout
 bindsym $mod+h split h; exec notify-send 'tile horizontally'
