@@ -82,6 +82,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 2.5; notify-send 'brightness
 bindsym $mod+h split h; exec notify-send 'tile horizontally'
 bindsym $mod+v split v; exec notify-send 'tile vertically'
 bindsym $mod+t layout tabbed
+bindsym $mod+s layout toggle split
 
 # Window mode
 bindsym $mod+f fullscreen toggle
