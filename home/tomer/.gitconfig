@@ -8,3 +8,6 @@
 
 [core]
     excludesfile = /home/tomer/.gitignore_global
+
+[commit]
+	gpgsign = true
