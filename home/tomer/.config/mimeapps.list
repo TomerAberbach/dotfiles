@@ -16,6 +16,7 @@ text/plain=mousepad.desktop
 x-scheme-handler/mailto=gnome-gmail.desktop
 message/rfc822=gnome-gmail.desktop
 application/pdf=epdfview.desktop
+image/gif=viewnior.desktop
 
 [Added Associations]
 x-scheme-handler/http=google-chrome.desktop
@@ -35,3 +36,4 @@ text/plain=mousepad.desktop;
 x-scheme-handler/mailto=gnome-gmail.desktop
 message/rfc822=gnome-gmail.desktop
 application/pdf=epdfview.desktop;
+image/gif=viewnior.desktop;
