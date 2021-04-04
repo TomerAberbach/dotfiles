@@ -1,4 +1,7 @@
 {
-  "tabsize": 2,
-  "tabstospaces": true
+    "*.md": {
+        "softwrap": true
+    },
+    "tabsize": 2,
+    "tabstospaces": true
 }
