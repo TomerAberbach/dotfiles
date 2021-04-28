@@ -1,0 +1,64 @@
+{
+  /* Appearance */
+  "window.autoDetectColorScheme": true,
+  "window.newWindowDimensions": "inherit",
+  "window.zoomLevel": 1,
+
+  /* Hide */
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": false,
+  "workbench.statusBar.visible": false,
+  "workbench.sideBar.location": "right",
+
+  /* Terminal */
+  "terminal.integrated.fontFamily": "Ubuntu Mono",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.4,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.letterSpacing": 0.2,
+  "terminal.integrated.cursorBlinking": true,
+
+  /* Editor */
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.fontFamily": "Ubuntu Mono",
+  "editor.fontSize": 16,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.rulers": [80],
+  "editor.snippetSuggestions": "top",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "files.autoSave": "afterDelay",
+  "search.useGlobalIgnoreFiles": true,
+  "search.useIgnoreFiles": true,
+  "timeline.excludeSources": [],
+
+
+  /* Less Noise */
+  "breadcrumbs.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "editor.renderLineHighlight": "none",
+  "window.menuBarVisibility": "hidden",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "editor.lightbulb.enabled": false,
+
+  /* Formatting */
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+
+  /* JavaScript */
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
+  "eslint.packageManager": "pnpm"
+}
