@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles ([tomer.link/dotfiles](https://tomer.link/dotfiles))
 
 > The files that configure my computer!
 
