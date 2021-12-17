@@ -1,0 +1,9 @@
+[Unit]
+Description=FluidSynth launched in server mode
+After=sound.target
+
+[Service]
+ExecStart=/usr/bin/fluidsynth -a pulseaudio -m alsa_seq -i -l -s -p FluidSynth /usr/share/soundfonts/FluidR3_GM.sf2
+
+[Install]
+WantedBy=default.target
