@@ -1,0 +1,10 @@
+{
+	"if statement": {
+    "prefix": "if",
+    "body": ["if ($0) {", "  ", "}"]
+  },
+  "try-catch": {
+    "prefix": "try",
+    "body": ["try {", "  $0", "} catch (error) {", "  ", "}"]
+  },
+}

@@ -1,0 +1,144 @@
+[
+  /* Editor */
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "cmd+l",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+]",
+    "command": "editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+[",
+    "command": "editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+[",
+    "command": "editor.fold",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+shift+]",
+    "command": "editor.unfold",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorFocus && !editorReadonly"
+  },
+
+  /* Multiple Cursors */
+  {
+    "key": "cmd+backspace",
+    "command": "editor.action.moveSelectionToPreviousFindMatch",
+    "when": "editorFocus && editorHasMultipleSelections"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "editor.action.moveSelectionToNextFindMatch",
+    "when": "editorFocus && editorHasMultipleSelections"
+  },
+  {
+    "key": "cmd+right",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorFocus && editorHasSelection"
+  },
+
+  /* Editor Panes */
+  {
+    "key": "cmd+n",
+    "command": "workbench.action.splitEditor",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+u",
+    "command": "workbench.action.focusNextGroup",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.joinAllGroups",
+    "when": "editorFocus && multipleEditorGroups"
+  },
+  {
+    "key": "cmd+=",
+    "command": "workbench.action.increaseViewSize",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+-",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "editorFocus"
+  },
+
+  /* IntelliSense */
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "cmd+shift+enter",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+\\",
+    "command": "editor.action.rename",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  /* Explorer */
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "cmd+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+
+  /* Terminal */
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "cmd+n",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+u",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  }
+]

@@ -1,0 +1,29 @@
+[user]
+    email = tomeraberbach@gmail.com
+    name = Tomer Aberbach
+    signingKey = DFBA76D022524A53C21C5EAA6971AB3D54A7896D
+
+[init]
+    defaultBranch = main
+
+[core]
+    excludesfile = /Users/tomer/.gitignore_global
+    pager = delta
+
+[commit]
+    gpgsign = true
+
+[push]
+    followTags = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
