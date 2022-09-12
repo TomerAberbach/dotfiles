@@ -15,6 +15,7 @@
 
 [push]
     followTags = true
+	autoSetupRemote = true
 
 [interactive]
     diffFilter = delta --color-only

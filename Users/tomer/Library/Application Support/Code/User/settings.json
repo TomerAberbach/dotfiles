@@ -36,7 +36,6 @@
   "files.autoSave": "off",
   "search.useGlobalIgnoreFiles": true,
   "search.useIgnoreFiles": true,
-  "timeline.excludeSources": [],
 
   /** Suggestions */
   "editor.wordBasedSuggestions": false,
@@ -87,5 +86,5 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.tsdk": "/opt/homebrew/Cellar/node/17.7.1/pnpm-global/5/node_modules/typescript/lib"
+  "typescript.tsdk": "/Users/tomer/Library/pnpm/global/5/node_modules/typescript/lib"
 }

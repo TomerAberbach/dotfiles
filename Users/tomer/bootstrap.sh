@@ -79,3 +79,4 @@ brew cleanup
 
 
 brew install --cask android-file-transfer
+brew install ffmpeg
