@@ -41,9 +41,6 @@
   "editor.wordBasedSuggestions": false,
   "editor.suggest.localityBonus": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
-
-  /* Less Noise */
-  "breadcrumbs.enabled": false,
   "editor.occurrencesHighlight": false,
   "editor.renderLineHighlight": "none",
   "workbench.startupEditor": "none",
@@ -86,5 +83,16 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.tsdk": "/Users/tomer/Library/pnpm/global/5/node_modules/typescript/lib"
+  "typescript.tsdk": "./node_modules/typescript/lib", //"/Users/tomer/Library/pnpm/global/5/node_modules/typescript/lib",
+  "redhat.telemetry.enabled": false,
+
+  "cSpell.enabledLanguageIds": ["markdown"],
+  "cSpell.userWords": [
+    "Aberbach",
+    "Marbach",
+    "Tomer",
+    "transpiling",
+    "uninherited"
+  ],
+  "editor.accessibilitySupport": "off"
 }

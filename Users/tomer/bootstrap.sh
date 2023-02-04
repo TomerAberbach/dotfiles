@@ -80,3 +80,11 @@ brew cleanup
 
 brew install --cask android-file-transfer
 brew install ffmpeg
+brew install java
+ set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
+
+brew install maven
+brew install --cask gimp
+brew install git-town
+brew install --cask inkscape
+brew install vips
