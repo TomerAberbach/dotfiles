@@ -83,16 +83,35 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.tsdk": "./node_modules/typescript/lib", //"/Users/tomer/Library/pnpm/global/5/node_modules/typescript/lib",
+  "typescript.tsdk": "./node_modules/typescript/lib",
   "redhat.telemetry.enabled": false,
 
   "cSpell.enabledLanguageIds": ["markdown"],
   "cSpell.userWords": [
     "Aberbach",
+    "autocorrection",
+    "autoplay",
+    "fontpie",
+    "gzipped",
+    "hrefs",
+    "Kantumruy",
+    "Kazenmayer",
+    "keyalesce",
     "Marbach",
+    "Noto",
+    "polykey",
+    "Roboto",
+    "strikethrough",
+    "stringifiable",
+    "stringifying",
     "Tomer",
     "transpiling",
-    "uninherited"
+    "uninherited",
+    "unstarring",
+    "webm"
   ],
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "[python]": {
+    "editor.formatOnType": true
+  },
 }
