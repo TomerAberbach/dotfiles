@@ -88,3 +88,6 @@ brew install --cask gimp
 brew install git-town
 brew install --cask inkscape
 brew install vips
+brew install fonttools
+brew install wabt
+brew install mysql-client
