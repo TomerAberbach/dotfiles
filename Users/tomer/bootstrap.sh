@@ -91,3 +91,10 @@ brew install vips
 brew install fonttools
 brew install wabt
 brew install mysql-client
+brew install cookiecutter
+brew install --cask hammerspoon
+brew install cmake
+brew install gcc
+brew install llvm libomp
+brew install pango
+brew install jj

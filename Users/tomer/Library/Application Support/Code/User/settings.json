@@ -7,9 +7,8 @@
 
   /* Hide */
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false,
   "workbench.editor.enablePreview": false,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.statusBar.visible": false,
   "workbench.sideBar.location": "right",
 
@@ -38,14 +37,14 @@
   "search.useIgnoreFiles": true,
 
   /** Suggestions */
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "editor.suggest.localityBonus": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.occurrencesHighlight": false,
+  "editor.occurrencesHighlight": "off",
   "editor.renderLineHighlight": "none",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
-  "editor.lightbulb.enabled": false,
+  "editor.lightbulb.enabled": "off",
 
   /* Formatting */
   "editor.detectIndentation": false,
@@ -56,6 +55,10 @@
   "files.trimTrailingWhitespace": true,
 
   /* JavaScript and TypeScript */
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.suggestSelection": "recentlyUsed"
@@ -100,6 +103,7 @@
     "Marbach",
     "Noto",
     "polykey",
+    "rearchitecture",
     "Roboto",
     "strikethrough",
     "stringifiable",
@@ -114,4 +118,10 @@
   "[python]": {
     "editor.formatOnType": true
   },
+  "workbench.activityBar.location": "hidden",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.preferredDarkColorTheme": "Night Owl",
+  "prisma.showPrismaDataPlatformNotification": false,
+
+  "jest.runMode": "on-demand"
 }

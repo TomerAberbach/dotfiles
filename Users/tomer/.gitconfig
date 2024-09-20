@@ -47,3 +47,9 @@
 [git-town]
   ship-delete-remote-branch = false
   code-hosting-driver = github
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
