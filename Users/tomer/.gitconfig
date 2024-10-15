@@ -2,7 +2,7 @@
   path = .gitconfig-secret
 
 [user]
-  email = tomeraberbach@gmail.com
+  email = tomer@aberba.ch
   name = Tomer Aberbach
   signingKey = DFBA76D022524A53C21C5EAA6971AB3D54A7896D
 
