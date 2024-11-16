@@ -123,5 +123,6 @@
   "workbench.preferredDarkColorTheme": "Night Owl",
   "prisma.showPrismaDataPlatformNotification": false,
 
-  "jest.runMode": "on-demand"
+  "jest.runMode": "on-demand",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
