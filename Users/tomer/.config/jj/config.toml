@@ -3,12 +3,13 @@ name = "Tomer Aberbach"
 email = "tomer@aberba.ch"
 
 [signing]
-sign-all = true
+signing.behavior = "own"
 backend = "gpg"
 key = "DFBA76D022524A53C21C5EAA6971AB3D54A7896D"
 
 [ui]
 default-command = "log"
+conflict-marker-style = "git"
 
 [template-aliases]
 'format_short_id(id)' = 'id.shortest()'

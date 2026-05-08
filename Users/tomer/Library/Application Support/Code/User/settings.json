@@ -11,6 +11,7 @@
   "workbench.editor.showTabs": "single",
   "workbench.statusBar.visible": false,
   "workbench.sideBar.location": "right",
+  "cSpell.enabled": false,
 
   /* Terminal */
   "terminal.integrated.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
@@ -21,6 +22,7 @@
   "terminal.integrated.letterSpacing": 0.2,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.enableKittyKeyboardProtocol": false,
 
   /* Editor */
   "editor.copyWithSyntaxHighlighting": false,
@@ -71,6 +73,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.suggestSelection": "recentlyUsed"
   },
+  "[rust]": {
+    "editor.tabSize": 4
+  },
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "typescript.preferences.importModuleSpecifierEnding": "js",
   "prettier.requireConfig": true,
@@ -94,20 +99,30 @@
     "Aberbach",
     "autocorrection",
     "autoplay",
+    "callees",
+    "Dominatee",
     "fontpie",
     "gzipped",
     "hrefs",
     "Kantumruy",
     "Kazenmayer",
     "keyalesce",
+    "Lengauer",
     "Marbach",
     "Noto",
     "polykey",
     "rearchitecture",
+    "rebeccapurple",
     "Roboto",
+    "roundtripped",
+    "Semidominator",
+    "semidominators",
+    "Speedscope",
+    "srcify",
     "strikethrough",
     "stringifiable",
     "stringifying",
+    "Tarjan",
     "Tomer",
     "transpiling",
     "uninherited",
@@ -124,5 +139,29 @@
   "prisma.showPrismaDataPlatformNotification": false,
 
   "jest.runMode": "on-demand",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "jdk.jdkhome": "/opt/homebrew/Cellar/openjdk/23.0.2",
+  "docker.extension.enableComposeLanguageServer": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "jdk.telemetry.enabled": false,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "claudeCode.preferredLocation": "panel",
+  "vscode-pets.petType": "dog",
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.theme": "autumn",
+  "chat.disableAIFeatures": true,
+  "vscode-pets.throwBallWithMouse": true
 }

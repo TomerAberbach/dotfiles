@@ -8,6 +8,7 @@ set -g fish_color_redirection magenta
 
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/go/bin
+fish_add_path $HOME/.local/bin
 
 set -gx PNPM_HOME "/Users/tomer/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
